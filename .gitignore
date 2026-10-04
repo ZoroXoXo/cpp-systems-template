@@ -1,0 +1,10 @@
+build/
+build-release/
+build-debug/
+build-asan/
+build-tsan/
+.cache/
+compile_commands.json
+*.o
+*.a
+*.so
