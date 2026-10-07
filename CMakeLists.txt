@@ -58,7 +58,11 @@ add_executable(lab2_runner benchmarks/lab2_memory_orders.cpp)
 target_compile_options(lab2_runner PRIVATE ${MY_PROJECT_WARNINGS})
 target_link_libraries(lab2_runner PRIVATE benchmark::benchmark)
 
-# Phase 3: SPSC Queue Benchmark
 add_executable(bench_spsc benchmarks/bench_spsc.cpp)
 target_compile_options(bench_spsc PRIVATE ${MY_PROJECT_WARNINGS})
 target_link_libraries(bench_spsc PRIVATE benchmark::benchmark)
+
+# Fixed Block Allocator Benchmark
+add_executable(bench_allocator benchmarks/bench_allocator.cpp)
+target_compile_options(bench_allocator PRIVATE ${MY_PROJECT_WARNINGS})
+target_link_libraries(bench_allocator PRIVATE benchmark::benchmark)
